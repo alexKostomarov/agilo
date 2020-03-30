@@ -36,6 +36,6 @@
         php artisan storage:link
         
         
-
+Весь проект целиком(вместе с библиотеками) можно скачать здесь http://photo.expo-link.ru/agilo/agilo.zip
     
   
