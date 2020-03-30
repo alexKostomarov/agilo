@@ -19,3 +19,15 @@
 после того, как будет настроена бд
 выполнить миграции
         php artisan migrate
+        
+ залить в базу дамп с таблицей пользоватеоей agilo.sql. В таблице один пользовтель-менеджер(login:alex@w-online.ru, password:12345678). 
+ В случае mysql так:
+        mysql -u user -p < agilo.sql
+        
+ Для доступа к приложенным к заявке файлом надо в папке public сделать симлинк на storage
+        php artisan storage:link
+        
+        
+
+    
+  
