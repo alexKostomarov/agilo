@@ -10,4 +10,12 @@
     composer require laravel/ui
     
 скачать архивом файлы пректа 
-    wget 
+    wget https://github.com/alexKostomarov/agilo/archive/master.zip
+    
+распаковать архив в папке проекта(подтвердить перезапись файлов)
+
+выполнить настройки в .env
+
+после того, как будет настроена бд
+выполнить миграции
+        php artisan migrate
