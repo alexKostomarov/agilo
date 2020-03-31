@@ -48,6 +48,9 @@ class CreateSupportRequestsTable extends Migration
             $table->boolean('is_closed')->default(false);
 
             $table->timestamps();
+
+            //прямая ссылка на заявку
+            $table->char('link', 255)->nullable();
         });
     }
 
