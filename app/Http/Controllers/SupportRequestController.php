@@ -97,7 +97,7 @@ class SupportRequestController extends Controller
             return redirect()->route('request_view', ['id' => $model->id]);
         }
         //вывод формы
-        return view('client\form',[
+        return view('client.form',[
             'subject' => "",
             'message' => "",
             'action' => route('request_create')
@@ -147,7 +147,7 @@ class SupportRequestController extends Controller
 
 
         //вывод формы
-        return view('client\form',[
+        return view('client.form',[
             'id' => $model->id,
             'subject' => $model->subject,
             'message' => $model->message,

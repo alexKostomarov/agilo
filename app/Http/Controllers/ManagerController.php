@@ -46,7 +46,7 @@ class ManagerController extends Controller
 
 
 
-        return view('manager\index',[
+        return view('manager.index',[
             'requests' => $requests,
             'filters' => $filters//null or array
         ]);

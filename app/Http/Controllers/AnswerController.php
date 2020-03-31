@@ -59,7 +59,7 @@ class AnswerController extends Controller
             return redirect()->route('request_view', ['id' => $support_request_id]);
         }
         //вывод формы
-        return view('answer\form',[
+        return view('answer.form',[
             'answer' => "",
             'action' => route('answer_create', ['support_request_id' => $support_request_id]),
             'support_request_id' => $support_request_id
@@ -90,7 +90,7 @@ class AnswerController extends Controller
             return redirect()->route('answer_update', ['id' => $model->id]);
         }
         //вывод формы
-        return view('answer\form',[
+        return view('answer.form',[
             'answer' => $model->answer,
             'action' => route('answer_update', ['id' => $model->id]),
             'support_request_id' => $model->support_request->id
