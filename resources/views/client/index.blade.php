@@ -51,11 +51,7 @@
                                         <a href="{{route("request_close", ['id' => $request->id])}}">закрыть</a>
                                     @endif
                                 </div>
-                                <div class="col-md-2">
-                                    @if(!$request->is_closed)
-                                        <a href="{{route("request_update", ['id' => $request->id])}}">редактировать</a>
-                                    @endif
-                                </div>
+                                
                             </div>
                         @endforeach
                     </div>
