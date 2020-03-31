@@ -39,7 +39,7 @@ class SupportRequestController extends Controller
 
 
         //вывод формы
-        return view('client\view',[
+        return view('client.view',[
             'id' => $id,
             'user_name' => $model->user->name,
             'subject' => $model->subject,
