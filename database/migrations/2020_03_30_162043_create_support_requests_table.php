@@ -37,15 +37,15 @@ class CreateSupportRequestsTable extends Migration
             /*
              * false, если заявка или ее изменние не просмотрена менеджером,
              * */
-            $table->boolean('is_viewed')->default(fales);
+            $table->boolean('is_viewed')->default(false);
 
             /*
              * false, если на заявку или ее изменние не было ответа менеджера,
              * */
-            $table->boolean('is_answered')->default(fales);
+            $table->boolean('is_answered')->default(false);
 
             //true, если заявка закрыта клиентом
-            $table->boolean('is_closed')->default(fales);
+            $table->boolean('is_closed')->default(false);
 
             $table->timestamps();
         });
