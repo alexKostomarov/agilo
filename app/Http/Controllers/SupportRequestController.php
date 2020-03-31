@@ -74,7 +74,7 @@ class SupportRequestController extends Controller
 
                 $path = $file->store("public");
 
-                $file_name = strrchr($path, '/') ;
+                $file_name = strrchr($path, '') ;
             }
 
 
