@@ -36,12 +36,15 @@ class AnswerController extends Controller
 
         if( $support_request->user_id !== $request->user()->id && !$request->user()->is_manager) abort(403, 'Unauthorized action.');
 
-        /*
+
         if($request->user()->is_manager){
             $support_request->is_answered = true;
             $support_request->save();
         }
-		*/
+        else{
+            $support_request->is_answered = false;
+            $support_request->save();
+        }
 
         //на любой ответ нужно ответить - поэтому сосnосяние - без ответа
         $support_request->is_answered = false;
