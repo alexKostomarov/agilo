@@ -43,7 +43,8 @@ class AnswerController extends Controller
         }
 		*/
 
-        $support_request->is_answered = true;
+        //на любой ответ нужно ответить - поэтому сосnосяние - без ответа
+        $support_request->is_answered = false;
         $support_request->save();
 
 
