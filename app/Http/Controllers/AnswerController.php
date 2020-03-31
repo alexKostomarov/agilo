@@ -36,10 +36,16 @@ class AnswerController extends Controller
 
         if( $support_request->user_id !== $request->user()->id && !$request->user()->is_manager) abort(403, 'Unauthorized action.');
 
+        /*
         if($request->user()->is_manager){
             $support_request->is_answered = true;
             $support_request->save();
         }
+		*/
+
+        $support_request->is_answered = true;
+        $support_request->save();
+
 
         //Запись Отвтета в базу, и редирект на его редактирование
         if($request->isMethod('post')){
