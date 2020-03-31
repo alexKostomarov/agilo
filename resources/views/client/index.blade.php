@@ -51,7 +51,7 @@
                                         <a href="{{route("request_close", ['id' => $request->id])}}">закрыть</a>
                                     @endif
                                 </div>
-                                
+
                             </div>
                         @endforeach
                     </div>
