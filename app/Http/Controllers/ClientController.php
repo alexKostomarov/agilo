@@ -26,6 +26,6 @@ class ClientController extends Controller
     {
         $entities = SupportRequest::where('user_id', $request->user()->id )->orderBy('updated_at', 'desc')->get();
 
-        return view('client\index', ['requests' => $entities]);
+        return view('client.index', ['requests' => $entities]);
     }
 }
